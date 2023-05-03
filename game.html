@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Guess</title>
+    <link rel="stylesheet" href="./game.css">
+</head>
+<body>
+    <div class="game-container-hold">
+        <header>
+            <h1>Number Guesser GAME</h1>
+            <p>To win you have to guess the number closest to the target</p>
+            <p class="good-luck">Good Luck</p>
+          </header>
+
+
+
+          <div Class="score-board">
+            <div id="computer-label" class="badge">Computer</div>
+            <div id="human-label" class="badge">Human</div>
+            
+            <Span id="computer-score">0</Span> : <Span id="human-score">0</Span>
+        </div>
+
+
+
+
+          <div class="rounds">
+            <p>Round <span id="round-number">1</span></p>
+            <!--Target Display-->
+            <p class="target-label">Target Number: <span id="target-number">?</span></p>
+          </div>
+
+          <div class="guessing-container"><!--guessing area-->
+
+            <!--COMPUTER-->
+            <h2>COMPUTER</h2>
+            <div class="computer-guess-area"> <!--guess computer-guess-->
+                <div class="guess-title">
+                    <p class = "guess-label"> Computer </p>
+                    
+                </div>
+                <!--Computer Guess DISPLAY-->
+                <p id="computer-guess">?</p>
+                <p class="winning-text" id="computer-wins"></p>
+            </div>
+
+            <!--ME-->
+            <h2>HUMAN</h2>
+            <div class="Humna-guess-area"> <!--guess computer-guess-->
+                <div class="guess-title">
+                    <p class = "guess-label"> ME</p>
+                    
+                </div>
+                <!--Human Guess DISPLAY-->
+                <input type="number" id="human-guess" min=0 max=9 value=0>
+                <div class="number-controls">
+                    <button class="number-control left" id="subtract" disabled>-</button>
+                    <button class="number-control right" id="add">+</button>
+                </div>
+                <!--Guess button -->
+                <button class="button" id="guess">Make a Guess</button>
+            </div>
+        </div>
+
+        <!--HOW MANY ROUND-->
+        <div class="next-round-container">
+            <!--rounds-->
+            <button class="button" id="next-round" disabled>Next Round</button>
+        </div>
+
+        <!--footer-->
+        <div class="footer">
+            <h3>Instruction          </h3>
+            <ul class="instruction">
+                <li>1. Input number between 0 and 9</li>
+                <li>2. Click on Make a Guess</li>
+                <li>3. Click on Next Round to play again</li>
+                <li>4. Continue with Step 1</li>
+                
+            </ul>
+            
+        </div>
+    </div>
+   
+    <script src="./game.js"></script>
+
+    
+</body>
+</html>

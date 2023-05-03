@@ -1,0 +1,82 @@
+* {
+  
+  box-sizing: border-box;
+}
+
+body {
+  margin: auto;
+  padding: 70px;
+  background-color: rgb(54, 54, 54);
+  ;
+}
+
+
+.game-container-hold {
+  max-width: 640px;
+  text-align: center;
+  margin: auto;
+  background-color:rgb(225, 225, 0);
+  padding: 10px
+}
+
+
+
+.score-board {
+Border: 3px Solid #Fff;
+Width: 300px;
+Margin: 20px Auto;
+Border-Radius: 4px;
+Text-Align: Center;
+Padding: 15px 10px;
+Position: Relative;
+}
+
+.badge {
+Background: #2ecded;
+Text-Transform: Uppercase;
+Padding: 5px 1.5px;
+}
+
+#human-label {
+Position: Absolute;
+Top: 50%;
+right: -5%;
+Transform: Translate(10%, -50%);
+font-weight: bolder;
+}
+
+#computer-label {
+Position: Absolute;
+Top: 50%;
+left: -5%;
+Transform: Translate(-10%, -50%);
+font-weight: bolder;
+}
+
+
+
+
+.good-luck{
+  color: green;
+  font-weight: bold;
+}
+
+.target-label{
+  font-weight:  bold;
+  
+}
+
+
+.guessing-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  margin-bottom: 60px;
+  background-color: rgb(155, 246, 244);
+}
+
+.instruction{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
